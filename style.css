@@ -1,0 +1,289 @@
+body,
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+
+  background-color: #222222;
+}
+
+/* ==============Header=================== */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fc7206;
+}
+
+header,
+footer h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ==============Main=================== */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-left {
+  padding: 20px;
+  flex: 2;
+}
+.section-left h1 {
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.img-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.text {
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  font-family: "Open Sans";
+  font-weight: 400;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #fc7206;
+}
+
+.img-right,
+.img-left {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-right img,
+.img-left img {
+  width: 100%;
+}
+
+.section-right {
+  text-align: center;
+  flex: 1;
+}
+.section-right img {
+  min-width: 350px;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* ==============Footer=================== */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+
+  background-color: #fc7206;
+}
+
+.infos {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #fff;
+}
+
+.info-left,
+.info-right {
+  padding: 5px;
+}
+
+.text-info {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+@media (min-width: 1336px) {
+  .section-left,
+  .section-right {
+    flex: 2;
+  }
+  main {
+    margin-top: 50px;
+  }
+  .img-right img,
+  .img-left img {
+    width: 400px;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+  }
+}
+
+@media (max-width: 1336px) {
+  .section-right img {
+    width: 500px;
+  }
+  .img-right {
+    gap: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .section-right img {
+    width: 400px;
+  }
+  .img-right {
+    gap: 20px;
+  }
+}
+@media (max-width: 950px) {
+  .section-right img {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 790px) {
+  .section-right img {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 650px) {
+  .section-left {
+    width: 100%;
+  }
+  .img-left img,
+  .img-right img {
+    width: 300px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 550px) {
+  .section-left {
+    margin: auto;
+    width: 100%;
+  }
+  .img-left img,
+  .img-right img {
+    width: 400px;
+  }
+  .img-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 15px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer h1 {
+    display: none;
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #fff;
+  }
+  .text-info {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  main {
+    display: block;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .img-left,
+  .img-right {
+    text-align: center;
+    align-items: center;
+  }
+  .img-right {
+    gap: 15px;
+  }
+  .section-right img {
+    width: 300px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer h1 {
+    display: none;
+  }
+  .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #fff;
+  }
+  .text-info {
+    margin-bottom: 5px;
+  }
+}
